@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C11DEB31-4C44-47D1-8095-807D90B15DAF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{701F234A-5B9F-4BB6-8077-B3BFFD44F4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayo.Core", "src\Ayo.Core\Ayo.Core.csproj", "{30941F74-0046-4129-9253-8C889C89809F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayo.Core.Tests", "tests\Ayo.Core.Tests\Ayo.Core.Tests.csproj", "{F6F147C6-0B1C-4A45-BB39-7812D5022278}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30941F74-0046-4129-9253-8C889C89809F} = {C11DEB31-4C44-47D1-8095-807D90B15DAF}
+		{F6F147C6-0B1C-4A45-BB39-7812D5022278} = {701F234A-5B9F-4BB6-8077-B3BFFD44F4E3}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30941F74-0046-4129-9253-8C889C89809F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30941F74-0046-4129-9253-8C889C89809F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30941F74-0046-4129-9253-8C889C89809F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30941F74-0046-4129-9253-8C889C89809F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
