@@ -1,13 +1,11 @@
-using Ayo.Api;
 using Ayo.Api.Data;
 using Ayo.Core;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddDbContextFactory<ConversionDbContext>(o=>
-    o.UseNpgsql(@"Host=localhost;Username=postgres;Password=root;Database=postgres"));
+    o.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 builder.Services.AddTransient<ConversionService>();
 builder.Services.AddTransient<MetricImperialFactory>();
 builder.Services.AddTransient<IConversionRateRepository, ConversionRateRepository>();
