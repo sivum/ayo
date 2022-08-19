@@ -17,7 +17,6 @@ public class TemperatureConverter:IMetricImperialConverter
     private double ConvertFahrenheitToCelcius(double value,double multiplier)
     {
         return (value - K)/ multiplier;
-
     }
 
     private double ConvertCelciusToFahrenheit(double value,double multiplier)
