@@ -19,10 +19,14 @@ public class ConversionService
         {
             throw new InvalidOperationException();
         }
-        return await new ValueTask<ConversionResult>(new ConversionResult()
+        
+        var metricImperialConverter = _metricImperialFactory.GetConverter(source, target);
+        var convertedValue = metricImperialConverter.Convert(source, target,value, conversionRate.Value);
+        
+        return new ConversionResult()
         {
             Target = target,
-            Value = 0d
-        });
+            Value = convertedValue
+        };
     }
 }
