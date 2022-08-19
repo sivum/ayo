@@ -25,16 +25,13 @@ WORKDIR /
 # Remove the archive
 RUN rm -rf /install
 
-RUN echo #!bin/bash >> /bin/baseline.sh
-RUN echo '/flyway/flyway -url=jdbc:postgresql://${HOST}:${PORT}/${DB} -user=${USER} -password=${PASSWORD} baseline' >> /bin/baseline.sh
-RUN chmod +x /bin/baseline.sh
 
 RUN echo #!bin/bash >> /bin/migrate.sh
-RUN echo '/flyway/flyway -url=jdbc:postgresql://${HOST}:${PORT}/${DB} -user=${USER} -password=${PASSWORD} migrate' >> /bin/migrate.sh
+RUN echo '/flyway/flyway -locations=filesystem:/flyway/sql -url=jdbc:postgresql://${HOST}:${PORT}/${DB} -user=${USER} -password=${PASSWORD} migrate' >> /bin/migrate.sh
 RUN chmod +x /bin/migrate.sh
 
 RUN echo #!bin/bash >> /bin/clean.sh
-RUN echo '/flyway/flyway -url=jdbc:postgresql://${HOST}:${PORT}/${DB} -user=${USER} -password=${PASSWORD} clean' >> /bin/clean.sh
+RUN echo '/flyway/flyway -locations=filesystem:/flyway/sql -url=jdbc:postgresql://${HOST}:${PORT}/${DB} -user=${USER} -password=${PASSWORD} clean' >> /bin/clean.sh
 RUN chmod +x /bin/clean.sh
 
 CMD ["/bin/bash"]

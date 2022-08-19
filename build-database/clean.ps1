@@ -1,1 +1,1 @@
-docker run --rm -it --network=host -e HOST=localhost -e DB=postgres -e USER=postgres ayo-runner/flyway /bin/bash -c clean.sh
+docker run --rm -it --network=host -e HOST=localhost -e DB=postgres -e USER=postgres -e PORT=5432 ayo-runner/flyway /bin/bash -c clean.sh

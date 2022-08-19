@@ -1,3 +1,3 @@
-FROM ayo/flyway:latest
+FROM ayo/flyway
 
 COPY sql /flyway/sql
