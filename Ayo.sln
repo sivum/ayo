@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayo.Core", "src\Ayo.Core\Ay
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayo.Core.Tests", "tests\Ayo.Core.Tests\Ayo.Core.Tests.csproj", "{F6F147C6-0B1C-4A45-BB39-7812D5022278}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ayo.Api", "src\Ayo.Api\Ayo.Api.csproj", "{79569CEC-2D4B-4DD6-897B-F93F1DFA8698}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{30941F74-0046-4129-9253-8C889C89809F} = {C11DEB31-4C44-47D1-8095-807D90B15DAF}
 		{F6F147C6-0B1C-4A45-BB39-7812D5022278} = {701F234A-5B9F-4BB6-8077-B3BFFD44F4E3}
+		{79569CEC-2D4B-4DD6-897B-F93F1DFA8698} = {C11DEB31-4C44-47D1-8095-807D90B15DAF}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{30941F74-0046-4129-9253-8C889C89809F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -26,5 +29,9 @@ Global
 		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6F147C6-0B1C-4A45-BB39-7812D5022278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79569CEC-2D4B-4DD6-897B-F93F1DFA8698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79569CEC-2D4B-4DD6-897B-F93F1DFA8698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79569CEC-2D4B-4DD6-897B-F93F1DFA8698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79569CEC-2D4B-4DD6-897B-F93F1DFA8698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
