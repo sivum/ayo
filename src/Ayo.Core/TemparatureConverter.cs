@@ -2,25 +2,26 @@
 
 public class TemparatureConverter
 {
-    public double Convert(string source, string target, double value)
+    private const double K = 32.0;
+    public double Convert(string source, string target, double value,double multiplier)
     {
         var operation = (source, target) switch
         {
-            ("c", "f") => ConvertCelciusToFahrenheit(value),
-            ("f", "c") => ConvertFahrenheitToCelcius(value),
+            ("c", "f") => ConvertCelciusToFahrenheit(value,multiplier),
+            ("f", "c") => ConvertFahrenheitToCelcius(value,multiplier),
             _ => throw new InvalidOperationException()
         };
         return operation;
     }
 
-    private double ConvertFahrenheitToCelcius(double value)
+    private double ConvertFahrenheitToCelcius(double value,double multiplier)
     {
-        return (value - 32.0)/1.8;
+        return (value - K)/ multiplier;
 
     }
 
-    private double ConvertCelciusToFahrenheit(double value)
+    private double ConvertCelciusToFahrenheit(double value,double multiplier)
     {
-        return 1.8 * value + 32.0;
+        return multiplier * value + K;
     }
 }
