@@ -8,7 +8,7 @@ public class ConversionRateRepositoryStub:IConversionRateRepository
     {
         var conversionRates = GetAllConversionRatesMock();
         var conversionRate =
-            conversionRates.Single(n => n.Source == source && n.Target == target);
+            conversionRates.SingleOrDefault(n => n.Source == source && n.Target == target);
         return await new ValueTask<ConversionRate>(conversionRate);
     }
 }
