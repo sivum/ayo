@@ -80,7 +80,7 @@ public class ConversionServiceTests
         conversionRates.Add(new ConversionRate(){ Source = "ft",Target = "m",Value = 0.3048});
         conversionRates.Add(new ConversionRate(){ Source = "m",Target = "ft",Value = 3.2809});
         conversionRates.Add(new ConversionRate(){ Source = "km",Target = "mi",Value = 0.6214});
-        conversionRates.Add(new ConversionRate(){ Source = "mi",Target = "1.6093",Value = 3.2809});
+        conversionRates.Add(new ConversionRate(){ Source = "mi",Target = "km",Value = 3.2809});
         return conversionRates;
     }
 }

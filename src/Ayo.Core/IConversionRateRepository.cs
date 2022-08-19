@@ -2,5 +2,5 @@
 
 public interface IConversionRateRepository
 {
-    Task<ConversionRate> GetConversionRate(string source, string target);
+    Task<ConversionRate?> GetConversionRate(string source, string target);
 }
