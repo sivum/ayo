@@ -1,6 +1,6 @@
 ﻿namespace Ayo.Core;
 
-public class TemparatureConverter
+public class TemperatureConverter:IMetricImperialConverter
 {
     private const double K = 32.0;
     public double Convert(string source, string target, double value,double multiplier)

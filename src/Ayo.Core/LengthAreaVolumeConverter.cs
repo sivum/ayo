@@ -1,6 +1,6 @@
 ﻿namespace Ayo.Core;
 
-public class LengthAreaVolumeConverter
+public class LengthAreaVolumeConverter:IMetricImperialConverter
 {
     public double Convert(string source, string target, double value, double multiplier)
     {

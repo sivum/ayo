@@ -12,7 +12,7 @@ public class TemperatureConversionTests
         double value, double expected)
 
     {
-        var sut = new TemparatureConverter();
+        var sut = new TemperatureConverter();
         var multiplier = 1.8;
         var result = sut.Convert(source, target, value,multiplier);
         result.Should().Be(expected);
