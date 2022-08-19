@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContextFactory<ConversionDbContext>(o=>
-    o.UseNpgsql(@"Host=localhost;Username=postgres;Password=root;Database=ayo"));
+    o.UseNpgsql(@"Host=localhost;Username=postgres;Password=root;Database=postgres"));
 builder.Services.AddTransient<ConversionService>();
 builder.Services.AddTransient<MetricImperialFactory>();
 builder.Services.AddTransient<IConversionRateRepository, ConversionRateRepository>();
