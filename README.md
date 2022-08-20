@@ -24,3 +24,6 @@ The api will run by default on localhost:8000
 | m     | ft     |meters  to feet|
 | km     | mi     |kilometers  to miles|
 | mi     | km     |miles to kilometers|
+
+
+![image](https://user-images.githubusercontent.com/14750396/185745301-d2aebcf0-cdc3-450c-9bb1-ab03d799b0a2.png)
