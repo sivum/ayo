@@ -27,3 +27,8 @@ The api will run by default on localhost:8000
 
 
 ![image](https://user-images.githubusercontent.com/14750396/185745301-d2aebcf0-cdc3-450c-9bb1-ab03d799b0a2.png)
+
+## Unsupported conversions will throw invalid operation exception by design.
+
+![image](https://user-images.githubusercontent.com/14750396/185745505-a9bcdfba-2c84-40cd-8243-82c7e73f658e.png)
+
