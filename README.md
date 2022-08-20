@@ -8,6 +8,8 @@
 3. execute build.ps1 from powershell / powershell core
 4. execute migrate.ps1 
 
+The api will run by default on localhost:8000
+
 ## Supported convesrions from the api
 
 | souce | target|description|
