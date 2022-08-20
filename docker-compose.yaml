@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  ayo-database:
+    image: postgres:13-alpine
+    environment: 
+      - POSTGRES_PASSWORD=root
+    ports:
+      - 5432:5432
+    networks:
+      - gateway
+  ayo-api:
+    depends_on:
+    - ayo-database
+    build: 
+      context: .
+    image: ayo-api:001
+    networks:
+      - gateway
+    ports:
+    - 8000:80
+
+
+networks:
+  gateway:
